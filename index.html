@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teemu Tannerma</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+    <div id="bg"></div>
+    <nav id="overlay">
+        <img src="images/close.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home" id="homeIcon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">About me</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="images/menu.svg" class="menu-btn" id="open-menu">
+    </header>
+    <section id="intro">
+        <h1 id="name">TEEMU TANNERMA</h1>
+        <h1>Web developer, Programmer, Student</h1>
+    </section>
+    <section id="icons">
+        <a href="https://github.com/ttannerma">
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://www.facebook.com/teemu.tannerma">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/teemu-tannerma-2a0b8a177/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/teeemuhenrik/">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </section>
+    <footer>
+        <h1>Teemu Tannerma © 2019</h1>
+    </footer>
+    <script>
+
+    // Define elements into variables.
+    var overlay = document.getElementById('overlay')
+    var closeMenu = document.getElementById('close-menu')
+
+    // Eventlistener for hamburger menu button.
+    document.getElementById('open-menu').addEventListener('click', () => {
+
+        // Add show menu class to show menu animations.
+        overlay.classList.add('show-menu')
+
+        // Removes hide menu class.
+        overlay.classList.remove('hide-menu')
+    })
+
+    // Eventlistener for close button in menu.
+    document.getElementById('close-menu').addEventListener('click', () => {
+        // Removes show menu class.
+        overlay.classList.remove('show-menu')
+
+        // Adds hide menu class which displays closing animation.
+        overlay.classList.add('hide-menu')
+    })
+    </script>
+</body>
+</html>

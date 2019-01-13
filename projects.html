@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teemu Tannerma | Projects</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+    <div id="bg"></div>
+    <nav id="overlay">
+        <img src="images/close.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home" id="homeIcon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">About me</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="images/menu.svg" class="menu-btn" id="open-menu">
+    </header>
+    <section id="intro">
+        <h1>Projects</h1>
+    </section>
+    <section id="project-container">
+        <div class="card">
+            <img class="card-img-top" src="images/nastahius.PNG" alt="NastaHius website screenshot">
+            <div class="card-body">
+              <h3 class="card-title">nastahius.fi</h5>
+              <p class="card-text">A modern, static and responsive website made from scratch with my classmate. Website uses Bootstrap and JavaScript.</p>
+              <a href="http://www.nastahius.fi/" class="btn btn-primary bg-info">Link to website</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/paintball.PNG" alt="Paint Ball screenshot">
+            <div class="card-body">
+                <h5 class="card-title">Paint Ball</h5>
+                <p class="card-text">An android game made for Exerium company, programmed in Java. I was the programmer in this project.</p>
+                <a href="https://play.google.com/store/apps/details?id=tamk.paintball.fi" class="btn btn-primary bg-info">Link to Google Play</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>Teemu Tannerma © 2019</h1>
+    </footer>
+    <script>
+
+    // Define elements into variables.
+    var overlay = document.getElementById('overlay')
+    var closeMenu = document.getElementById('close-menu')
+
+    // Eventlistener for hamburger menu button.
+    document.getElementById('open-menu').addEventListener('click', () => {
+
+        // Add show menu class to show menu animations.
+        overlay.classList.add('show-menu')
+
+        // Removes hide menu class.
+        overlay.classList.remove('hide-menu')
+    })
+
+    // Eventlistener for close button in menu.
+    document.getElementById('close-menu').addEventListener('click', () => {
+        // Removes show menu class.
+        overlay.classList.remove('show-menu')
+
+        // Adds hide menu class which displays closing animation.
+        overlay.classList.add('hide-menu')
+    })
+    </script>
+</body>
+</html>
