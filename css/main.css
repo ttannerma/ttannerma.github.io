@@ -377,9 +377,9 @@ body #contacts-container .contact h3 {
     font-size: 1.8em;
   }
   body #cards-container {
-    max-width: 65%;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    max-width: 60%;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
     margin: 10px 10% 10% 10%;
     padding: 0;
   }

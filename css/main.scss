@@ -384,8 +384,8 @@ body {
             }
         }
         #cards-container {
-            max-width: 65%;
-            grid-template-columns: repeat(6,1fr);
+            max-width: 60%;
+            grid-template-columns: repeat(5,1fr);
             margin: 10px 10% 10% 10%; 
             padding: 0;
             .card-body {
